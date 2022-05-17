@@ -15,7 +15,7 @@ export function FeedbackTypeStep({
         <CloseButton />
       </header>
 
-      <div className="flex py-8 gap-2 w-full">
+      <div className="flex align-center justify-center py-8 gap-2 w-full">
         {Object.entries(feedbackTypes).map(([key, value]) => {
           return (
             <button
