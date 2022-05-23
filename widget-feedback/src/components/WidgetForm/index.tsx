@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { CloseButton } from '../CloseButton'
 import bugImagemUrl from '../../assets/bug.svg'
 import ideaImagemUrl from '../../assets/idea.svg'
 import thoughtImagemUrl from '../../assets/thought.svg'
@@ -43,7 +42,7 @@ export function WidgetForm() {
   }
 
   return (
-    <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vh-2rem)] md:w-auto">
+    <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
       {feedbackSent ? (
         <FeedbackSuccessStep
           onFeedbackRestartRequested={handleRestartFeedback}
@@ -62,7 +61,7 @@ export function WidgetForm() {
         </>
       )}
 
-      <footer text-xs="true" text-neutral-400="true">
+      <footer className="text-xs text-neutral-400=">
         Feito com ♥ pelo{' '}
         <a
           className="underline underline-offset-2 "
